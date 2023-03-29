@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "2bfd5f17-9b78-4f1e-87c6-dc741071eb31",
+		"name": "Методы API базы данных",
+		"description": "Методы работы с приложением Базы Данных",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24583970"
+	},
+	"item": [
+		{
+			"name": "Получение списка клиентов",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123qwe",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "slava@skillbox.ru",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice1/api/users/",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice1",
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение конкретного клиента",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123qwe",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "slava@skillbox.ru",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice1/api/users/1",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice1",
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "123qwe",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "slava@skillbox.ru",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
